@@ -1,0 +1,415 @@
+/* Mobile CSS for screen sizes of 768px and below*/
+@media screen and (max-width: 768px) {
+  .site-branding {
+    width: 50%;
+  }
+
+  .site-branding img {
+    width: 35%;
+    height: auto;
+  }
+
+  .trj-nav {
+    width: 50%;
+    position: relative;
+  }
+
+  .ft-brand {
+    width: 45%;
+  }
+
+  .ft-detail {
+    width: 30%;
+  }
+
+  .menu-center {
+    position: absolute;
+  }
+
+  .trj-info_table {
+    width: 95%;
+  }
+
+  .gad-feat {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .gad {
+    padding-top: 20px;
+  }
+
+  .hm-p {
+    width: 100%;
+  }
+
+  .slide-flex {
+    flex-direction: column;
+  }
+
+  .slide-img {
+    width: 100%;
+  }
+
+  .slide-img img {
+    border-radius: 12px 12px 0 0!important;
+  }
+
+  .slide-text {
+    width: 100%;
+  }
+
+  .trj-table_scholar thead tr th {
+    width: 30%;
+    padding-right: 60px;
+  }
+
+  .about-cta {
+    width: 100%;
+  }
+
+  .posts-cat {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  
+  .trj-post {
+    margin-bottom: 20px;
+  }
+
+  .trj-post img {
+    height: 400px;
+  }
+
+  .blog-intro h1 {
+    width: 80%;
+  }
+
+  .blog-intro p {
+    width: 80%;
+  }
+
+  .blog-cat_heading p {
+	  width: 80%;
+  }
+
+  .cat__ {
+    width: 80%;
+  }
+
+  .cat-link {
+    width: 30%;
+  }
+
+  .blog-sub_form input[type="email"] {
+    width: 45%;
+  }
+
+  .blog-sub_form input[type="submit"] {
+    width: 25%;
+  }
+
+  .post-intro {
+    margin-top: 0;
+    flex-direction: column;
+  }
+
+  .post-intro_banner {
+    width: 100%;
+  }
+
+  .post-intro_text {
+    width: 80%;
+    padding-left: 0;
+    margin: auto;
+  }
+
+  .intro-title {
+    width: 100%;
+  }
+
+  .intro-excerpt {
+    width: 100%;
+  }
+
+  .rebal-table {
+    overflow-x: auto!important;
+    display: block;
+    padding: 0;
+  }
+
+  .rebal-table thead {
+    width: 100%;
+  }
+
+  .rebal-table thead tr {
+    width: 100%;
+  }
+
+  .rebal-table thead tr th {
+    padding: 0 20px 0 0;
+    width: 100%;
+  }
+  
+}
+
+@media screen and (max-width: 768px) {
+	.mac-screen.ive img {
+    	height: 770px!important;
+	}
+}
+@media screen and (max-width: 900px) {
+  .site-branding {
+    width: 100%;
+  }
+
+  .hamburger {
+    display: flex;
+    transition: 0.5s ease;
+    position: absolute;
+    bottom: -10px;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+
+  .open {
+    display: block;
+  }
+
+  .fl {
+    transform: rotate(-45deg);
+    transition: 0.5s ease;
+    margin-top: 10px;
+    margin-left: -2px;
+  }
+
+  .hamburger span.sl {
+    display: none;
+    transition: transform 0.5s ease;
+  }
+
+  .tl {
+    transform: rotate(45deg);
+    transition: transform 0.5s ease;
+    margin-left: -1px;
+    margin-top: -2px;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .main-navigation ul {
+    display: none;
+  }
+
+  .trj-header {
+    position: sticky;
+    top: 0;
+    background: #fff;
+    padding-top: 0;
+  }
+
+  .trj-nav {
+    width: 10%;
+    position: relative;
+  }
+
+  .site-footer {
+    padding-top: 20px;
+  }
+
+  .ft-brand {
+    width: 40%;
+  }
+
+  .ft-detail {
+    width: 30%;
+  }
+
+  .mac-screen img {
+    height: 700px!important;
+    margin-bottom: 100px;
+    object-fit: cover;
+  }
+
+  .cal-group {
+    width: 100%;
+  }
+
+  .lo-gr {
+    flex-direction: column;
+  }
+
+  .lo-gr > .cal-group {
+    width: 100%;
+    padding-bottom: 20px;
+  }
+
+  .loan-info {
+    width: 100%;
+  }
+
+  .qa-cat {
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+
+  .hero-heading {
+    font-size: 35px;
+  }
+
+  .hd-p {
+    width: 100%;
+  }
+
+  .cat-link {
+    width: 30%;
+  }
+
+  .ft-input,
+  .ft-submit {
+    width: 100%;
+    margin-bottom: 5px;
+  }
+
+}
+
+@media screen and (max-width: 600px) {
+
+  .ft-top, .ft-bottom {
+    /* flex-direction: column; */
+    flex-wrap: wrap;
+  }
+
+  .ft-brand {
+    width: 100%;
+  }
+
+  .ft-top .ft-detail {
+    width: 50%;
+    padding-left: 0;
+    padding-top: 30px;
+  }
+
+  .ft-bottom .ft-detail {
+    width: 100%;
+    padding-left: 0;
+    padding-top: 15px;
+  }
+  
+  .ft-bottom .ft-detail:first-child {
+      width: 100%;
+  }
+
+  .ft-bottom .ft-detail:last-child {
+    padding-top: 0;
+  }
+
+  .trj-subheading_hm {
+    text-align: center;
+  }
+
+  .svg svg {
+    width: 100%;
+  }
+
+  table.investment-table {
+    overflow-x: auto!important;
+    display: block;
+  }
+
+  .investment-table thead tr th {
+    padding-right: 10px;
+  }
+
+  .hd-p {
+    text-shadow: 0 0 black;
+  }
+
+  .trj-info_table {
+    overflow-x: auto;
+  }
+
+  .blog-sub_form input[type="email"] {
+    width: 58%;
+  }
+
+  .blog-sub_form input[type="submit"] {
+    width: 35%;
+  }
+
+  .cat-link {
+    width: 48%;
+  }
+
+  .post-details_footer {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .share-post, 
+  .post-details_share p {
+    text-align: left;
+  }
+
+  .post-details_share p {
+    padding-left: 10px;
+  }
+	
+  .ctrl {
+	  right: 30px;
+  }
+  
+  .qa-input {
+    width: 100%;
+  }
+  
+  .trj-header_text {
+      font-size: 25px;
+  }
+  
+  .trj-subheading_hm {
+      font-size: 25px;
+  }
+  
+  .ctrl {
+      bottom: 20px;
+  }
+  
+  .ft-social {
+      margin-bottom: 20px;
+  }
+	
+  .mac-screen img {
+	  height: 670px!important;
+  }
+
+}
+
+@media screen and (max-width: 375px) {
+  .ft-top .ft-detail {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .investmen-calculator {
+    padding: 0;
+  }
+
+  #loan-months {
+    margin-top: 2px;
+  }
+
+  .cal-holder input[type="number"]::placeholder {
+    font-size: 14px;
+  }
+
+  .input.dr ~ .ba p {
+    font-size: 20px;
+  }
+
+  .loan-cta {
+    padding-top: 0;
+  }
+
+}
