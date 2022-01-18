@@ -1,0 +1,300 @@
+0000.000 (0) Opened log file at time: Tue, 18 Jan 2022 12:14:47 +0000 on https://trjcompanylimited.com
+0000.005 (0) UpdraftPlus WordPress backup plugin (https://updraftplus.com): 1.22.1 WP: 5.8.1 PHP: 7.4.3 (apache2handler, Linux TRJCompany 5.4.0-94-generic #106-Ubuntu SMP Thu Jan 6 23:58:14 UTC 2022 x86_64) MySQL: 8.0.27-0ubuntu0.20.04.1 (max packet size=67108864) WPLANG: en_US Server: Apache/2.4.41 (Ubuntu) safe_mode: 0 max_execution_time: 900 memory_limit: 256M (used: 7.3M | 2M) multisite: N openssl: OpenSSL 1.1.1f  31 Mar 2020 mcrypt: N LANG: C ZipArchive::addFile: Y
+0000.006 (0) Free space on disk containing Updraft's temporary directory: 14527.9 MB
+0000.010 (0) Tasks: Backup files: 1 (schedule: unset) Backup DB: 1 (schedule: unset)
+0000.014 (0) Semaphore (fd, wp_options) being initialised
+0000.021 (0) Requesting semaphore lock (fd) (apparently not via scheduler)
+0000.026 (0) Set semaphore last lock (fd) time to 2022-01-18 12:14:47
+0000.028 (0) Semaphore lock (fd) complete
+0000.034 (0) Backup run: resumption=0, nonce=cf8e27a36455, file_nonce=cf8e27a36455 begun at=1642508087 (0s ago), job type=backup
+0000.038 (0) Scheduling a resumption (1) after 300 seconds (1642508387) in case this run gets aborted
+0000.073 (0) Checking if we have a zip executable available
+0000.077 (0) Creation of backups of directories: beginning
+0000.084 (0) Beginning creation of dump of plugins (split every: 400 MB)
+0000.313 (0) Total entities for the zip file: 946 directories, 4750 files (0 skipped as non-modified), 79.9 MB
+0000.321 (0) Zip: backup_2022-01-18-1214_TRJ_Company_Limited_Portfolio__cf8e27a36455-plugins.zip.tmp: 100 files added (on-disk size: 0 KB)
+0000.327 (0) Zip: backup_2022-01-18-1214_TRJ_Company_Limited_Portfolio__cf8e27a36455-plugins.zip.tmp: 200 files added (on-disk size: 0 KB)
+0000.333 (0) Zip: backup_2022-01-18-1214_TRJ_Company_Limited_Portfolio__cf8e27a36455-plugins.zip.tmp: 300 files added (on-disk size: 0 KB)
+0000.340 (0) Zip: backup_2022-01-18-1214_TRJ_Company_Limited_Portfolio__cf8e27a36455-plugins.zip.tmp: 400 files added (on-disk size: 0 KB)
+0000.346 (0) Zip: backup_2022-01-18-1214_TRJ_Company_Limited_Portfolio__cf8e27a36455-plugins.zip.tmp: 500 files added (on-disk size: 0 KB)
+0000.352 (0) Zip: backup_2022-01-18-1214_TRJ_Company_Limited_Portfolio__cf8e27a36455-plugins.zip.tmp: 600 files added (on-disk size: 0 KB)
+0000.358 (0) Zip: backup_2022-01-18-1214_TRJ_Company_Limited_Portfolio__cf8e27a36455-plugins.zip.tmp: 700 files added (on-disk size: 0 KB)
+0000.364 (0) Zip: backup_2022-01-18-1214_TRJ_Company_Limited_Portfolio__cf8e27a36455-plugins.zip.tmp: 800 files added (on-disk size: 0 KB)
+0000.370 (0) Zip: backup_2022-01-18-1214_TRJ_Company_Limited_Portfolio__cf8e27a36455-plugins.zip.tmp: 900 files added (on-disk size: 0 KB)
+0000.377 (0) Zip: backup_2022-01-18-1214_TRJ_Company_Limited_Portfolio__cf8e27a36455-plugins.zip.tmp: 1000 files added (on-disk size: 0 KB)
+0000.379 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 1000 files added on this batch (5.6 MB, 4750 files batched, 1001 (1001) added so far); re-opening (prior size: 0 KB)
+0001.318 (0) Zip: backup_2022-01-18-1214_TRJ_Company_Limited_Portfolio__cf8e27a36455-plugins.zip.tmp: 1100 files added (on-disk size: 2358.5 KB)
+0001.327 (0) Zip: backup_2022-01-18-1214_TRJ_Company_Limited_Portfolio__cf8e27a36455-plugins.zip.tmp: 1200 files added (on-disk size: 2358.5 KB)
+0001.332 (0) Zip: backup_2022-01-18-1214_TRJ_Company_Limited_Portfolio__cf8e27a36455-plugins.zip.tmp: 1300 files added (on-disk size: 2358.5 KB)
+0001.337 (0) Zip: backup_2022-01-18-1214_TRJ_Company_Limited_Portfolio__cf8e27a36455-plugins.zip.tmp: 1400 files added (on-disk size: 2358.5 KB)
+0001.342 (0) Zip: backup_2022-01-18-1214_TRJ_Company_Limited_Portfolio__cf8e27a36455-plugins.zip.tmp: 1500 files added (on-disk size: 2358.5 KB)
+0001.348 (0) Zip: backup_2022-01-18-1214_TRJ_Company_Limited_Portfolio__cf8e27a36455-plugins.zip.tmp: 1600 files added (on-disk size: 2358.5 KB)
+0001.353 (0) Zip: backup_2022-01-18-1214_TRJ_Company_Limited_Portfolio__cf8e27a36455-plugins.zip.tmp: 1700 files added (on-disk size: 2358.5 KB)
+0001.360 (0) Zip: backup_2022-01-18-1214_TRJ_Company_Limited_Portfolio__cf8e27a36455-plugins.zip.tmp: 1800 files added (on-disk size: 2358.5 KB)
+0001.365 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 25 MB added on this batch (25.4 MB, 4750 files batched, 879 (1880) added so far); re-opening (prior size: 2358.5 KB)
+0004.833 (0) A useful amount of data was added after this amount of zip processing: 3.7 s (normalised: 3.6 s, rate: 7107.2 KB/s)
+0004.837 (0) Performance is good - will increase the amount of data we attempt to batch (time=3.6534700393677, normalised_time=3.6019798538756, max_time=4.8352000713348, data points known=1, old_max_bytes=26214400, new_max_bytes=43666651)
+0004.854 (0) Zip: backup_2022-01-18-1214_TRJ_Company_Limited_Portfolio__cf8e27a36455-plugins.zip.tmp: 1900 files added (on-disk size: 10229.6 KB)
+0004.861 (0) Zip: backup_2022-01-18-1214_TRJ_Company_Limited_Portfolio__cf8e27a36455-plugins.zip.tmp: 2000 files added (on-disk size: 10229.6 KB)
+0004.866 (0) Zip: backup_2022-01-18-1214_TRJ_Company_Limited_Portfolio__cf8e27a36455-plugins.zip.tmp: 2100 files added (on-disk size: 10229.6 KB)
+0004.872 (0) Zip: backup_2022-01-18-1214_TRJ_Company_Limited_Portfolio__cf8e27a36455-plugins.zip.tmp: 2200 files added (on-disk size: 10229.6 KB)
+0004.877 (0) Zip: backup_2022-01-18-1214_TRJ_Company_Limited_Portfolio__cf8e27a36455-plugins.zip.tmp: 2300 files added (on-disk size: 10229.6 KB)
+0004.882 (0) Zip: backup_2022-01-18-1214_TRJ_Company_Limited_Portfolio__cf8e27a36455-plugins.zip.tmp: 2400 files added (on-disk size: 10229.6 KB)
+0004.887 (0) Zip: backup_2022-01-18-1214_TRJ_Company_Limited_Portfolio__cf8e27a36455-plugins.zip.tmp: 2500 files added (on-disk size: 10229.6 KB)
+0004.892 (0) Zip: backup_2022-01-18-1214_TRJ_Company_Limited_Portfolio__cf8e27a36455-plugins.zip.tmp: 2600 files added (on-disk size: 10229.6 KB)
+0004.897 (0) Zip: backup_2022-01-18-1214_TRJ_Company_Limited_Portfolio__cf8e27a36455-plugins.zip.tmp: 2700 files added (on-disk size: 10229.6 KB)
+0004.903 (0) Zip: backup_2022-01-18-1214_TRJ_Company_Limited_Portfolio__cf8e27a36455-plugins.zip.tmp: 2800 files added (on-disk size: 10229.6 KB)
+0004.907 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 1000 files added on this batch (29.7 MB, 4750 files batched, 1001 (2881) added so far); re-opening (prior size: 10229.6 KB)
+0007.590 (0) Zip: backup_2022-01-18-1214_TRJ_Company_Limited_Portfolio__cf8e27a36455-plugins.zip.tmp: 2900 files added (on-disk size: 16769.5 KB)
+0007.603 (0) Zip: backup_2022-01-18-1214_TRJ_Company_Limited_Portfolio__cf8e27a36455-plugins.zip.tmp: 3000 files added (on-disk size: 16769.5 KB)
+0007.612 (0) Zip: backup_2022-01-18-1214_TRJ_Company_Limited_Portfolio__cf8e27a36455-plugins.zip.tmp: 3100 files added (on-disk size: 16769.5 KB)
+0007.623 (0) Zip: backup_2022-01-18-1214_TRJ_Company_Limited_Portfolio__cf8e27a36455-plugins.zip.tmp: 3200 files added (on-disk size: 16769.5 KB)
+0007.635 (0) Zip: backup_2022-01-18-1214_TRJ_Company_Limited_Portfolio__cf8e27a36455-plugins.zip.tmp: 3300 files added (on-disk size: 16769.5 KB)
+0007.647 (0) Zip: backup_2022-01-18-1214_TRJ_Company_Limited_Portfolio__cf8e27a36455-plugins.zip.tmp: 3400 files added (on-disk size: 16769.5 KB)
+0007.657 (0) Zip: backup_2022-01-18-1214_TRJ_Company_Limited_Portfolio__cf8e27a36455-plugins.zip.tmp: 3500 files added (on-disk size: 16769.5 KB)
+0007.668 (0) Zip: backup_2022-01-18-1214_TRJ_Company_Limited_Portfolio__cf8e27a36455-plugins.zip.tmp: 3600 files added (on-disk size: 16769.5 KB)
+0007.677 (0) Zip: backup_2022-01-18-1214_TRJ_Company_Limited_Portfolio__cf8e27a36455-plugins.zip.tmp: 3700 files added (on-disk size: 16769.5 KB)
+0007.687 (0) Zip: backup_2022-01-18-1214_TRJ_Company_Limited_Portfolio__cf8e27a36455-plugins.zip.tmp: 3800 files added (on-disk size: 16769.5 KB)
+0007.696 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 1000 files added on this batch (8.1 MB, 4750 files batched, 1001 (3882) added so far); re-opening (prior size: 16769.5 KB)
+0008.630 (0) Zip: backup_2022-01-18-1214_TRJ_Company_Limited_Portfolio__cf8e27a36455-plugins.zip.tmp: 3900 files added (on-disk size: 18875.3 KB)
+0008.639 (0) Zip: backup_2022-01-18-1214_TRJ_Company_Limited_Portfolio__cf8e27a36455-plugins.zip.tmp: 4000 files added (on-disk size: 18875.3 KB)
+0008.649 (0) Zip: backup_2022-01-18-1214_TRJ_Company_Limited_Portfolio__cf8e27a36455-plugins.zip.tmp: 4100 files added (on-disk size: 18875.3 KB)
+0008.657 (0) Zip: backup_2022-01-18-1214_TRJ_Company_Limited_Portfolio__cf8e27a36455-plugins.zip.tmp: 4200 files added (on-disk size: 18875.3 KB)
+0008.663 (0) Zip: backup_2022-01-18-1214_TRJ_Company_Limited_Portfolio__cf8e27a36455-plugins.zip.tmp: 4300 files added (on-disk size: 18875.3 KB)
+0008.671 (0) Zip: backup_2022-01-18-1214_TRJ_Company_Limited_Portfolio__cf8e27a36455-plugins.zip.tmp: 4400 files added (on-disk size: 18875.3 KB)
+0008.678 (0) Zip: backup_2022-01-18-1214_TRJ_Company_Limited_Portfolio__cf8e27a36455-plugins.zip.tmp: 4500 files added (on-disk size: 18875.3 KB)
+0008.684 (0) Zip: backup_2022-01-18-1214_TRJ_Company_Limited_Portfolio__cf8e27a36455-plugins.zip.tmp: 4600 files added (on-disk size: 18875.3 KB)
+0008.690 (0) Zip: backup_2022-01-18-1214_TRJ_Company_Limited_Portfolio__cf8e27a36455-plugins.zip.tmp: 4700 files added (on-disk size: 18875.3 KB)
+0010.551 (0) Creating zip file manifest (/var/www/html/wp-content/updraft/backup_2022-01-18-1214_TRJ_Company_Limited_Portfolio__cf8e27a36455-plugins.zip.list-temp.tmp)
+0010.569 (0) Successfully created zip file manifest (size: 389314)
+0011.021 (0) Created plugins zip (0) - 22104.1 KB in 10.9 s (2021.5 KB/s) (sha1: d4894b3b62e982cd8c36213835a917f9192a5e42, sha256: 8915382ac21f63bd77eedb200e16758d8c84ad4dfb1d71eeea9f7446ead6f3c3)
+0011.025 (0) Beginning creation of dump of themes (split every: 400 MB)
+0011.068 (0) Total entities for the zip file: 103 directories, 439 files (0 skipped as non-modified), 15.8 MB
+0011.073 (0) Zip: backup_2022-01-18-1214_TRJ_Company_Limited_Portfolio__cf8e27a36455-themes.zip.tmp: 100 files added (on-disk size: 0 KB)
+0011.079 (0) Zip: backup_2022-01-18-1214_TRJ_Company_Limited_Portfolio__cf8e27a36455-themes.zip.tmp: 200 files added (on-disk size: 0 KB)
+0011.084 (0) Zip: backup_2022-01-18-1214_TRJ_Company_Limited_Portfolio__cf8e27a36455-themes.zip.tmp: 300 files added (on-disk size: 0 KB)
+0011.089 (0) Zip: backup_2022-01-18-1214_TRJ_Company_Limited_Portfolio__cf8e27a36455-themes.zip.tmp: 400 files added (on-disk size: 0 KB)
+0012.595 (0) Creating zip file manifest (/var/www/html/wp-content/updraft/backup_2022-01-18-1214_TRJ_Company_Limited_Portfolio__cf8e27a36455-themes.zip.list-temp.tmp)
+0012.598 (0) Successfully created zip file manifest (size: 27313)
+0012.793 (0) Created themes zip (0) - 12146.6 KB in 1.8 s (6885 KB/s) (sha1: ef307e5fa28124ce1bf17d4f5eb75e0b94f6a8ee, sha256: e837fac96753bddc4c4373864eea347a6bef3fb48ace71f04e4d2f87bd3d0876)
+0012.799 (0) Exclusion option setting (uploads): backup*,*backups,backwpup*,wp-clone,snapshots
+0012.801 (0) Looking for candidates to backup in: /var/www/html/wp-content/uploads
+0012.802 (0) finding files: ao_ccss: adding to list (1)
+0012.804 (0) finding files: elementor: adding to list (2)
+0012.806 (0) finding files: 2021: adding to list (3)
+0012.808 (0) finding files: 2022: adding to list (4)
+0012.809 (0) Beginning creation of dump of uploads (split every: 400 MB)
+0012.829 (0) Total entities for the zip file: 19 directories, 381 files (1 skipped as non-modified), 72.3 MB
+0012.835 (0) Zip: backup_2022-01-18-1214_TRJ_Company_Limited_Portfolio__cf8e27a36455-uploads.zip.tmp: 100 files added (on-disk size: 0 KB)
+0012.840 (0) Zip: backup_2022-01-18-1214_TRJ_Company_Limited_Portfolio__cf8e27a36455-uploads.zip.tmp: 200 files added (on-disk size: 0 KB)
+0012.843 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 41.6 MB added on this batch (41.7 MB, 381 files batched, 216 (216) added so far); re-opening (prior size: 0 KB)
+0013.298 (0) A useful amount of data was added after this amount of zip processing: 1.1 s (normalised: 1.1 s, rate: 38158.9 KB/s)
+0013.316 (0) Performance is good - will increase the amount of data we attempt to batch (time=1.1186630725861, normalised_time=1.1175177274033, max_time=13.308892011642, data points known=1, old_max_bytes=43666651, new_max_bytes=209715200)
+0013.337 (0) Zip: backup_2022-01-18-1214_TRJ_Company_Limited_Portfolio__cf8e27a36455-uploads.zip.tmp: 300 files added (on-disk size: 42544.5 KB)
+0014.041 (0) Creating zip file manifest (/var/www/html/wp-content/updraft/backup_2022-01-18-1214_TRJ_Company_Limited_Portfolio__cf8e27a36455-uploads.zip.list-temp.tmp)
+0014.046 (0) Successfully created zip file manifest (size: 20996)
+0015.775 (0) Created uploads zip (0) - 73960.4 KB in 3 s (24960.9 KB/s) (sha1: 1c2aac97813114e223060cea6074b98a82eb44eb, sha256: 80033afe4e6881ead6468ca7c9728ed93f33a5968df7683b64d32493767f7df6)
+0015.782 (0) Beginning backup of other directories found in the content directory (index: 0)
+0015.785 (0) Exclusion option setting (others): upgrade,cache,updraft,backup*,*backups,mysql.sql,debug.log
+0015.786 (0) Looking for candidates to backup in: /var/www/html/wp-content
+0015.788 (0) finding files: cache: skipping: excluded by options
+0015.790 (0) finding files: upgrade: skipping: excluded by options
+0015.792 (0) finding files: themes: skipping: this is the themes directory
+0015.794 (0) finding files: updraft: skipping: this is the updraft directory
+0015.796 (0) finding files: plugins: skipping: this is the plugins directory
+0015.798 (0) finding files: uploads: skipping: this is the uploads directory
+0015.799 (0) finding files: autoptimize_404_handler.php: adding to list (1)
+0015.801 (0) finding files: index.php: adding to list (2)
+0015.807 (0) Total entities for the zip file: 0 directories, 2 files (0 skipped as non-modified), 0 MB
+0015.814 (0) Creating zip file manifest (/var/www/html/wp-content/updraft/backup_2022-01-18-1214_TRJ_Company_Limited_Portfolio__cf8e27a36455-others.zip.list-temp.tmp)
+0015.816 (0) Successfully created zip file manifest (size: 80)
+0015.822 (0) Created others zip (0) - 1.2 KB in 0 s (65.7 KB/s) (sha1: d3dc858342c042ce5e34bd1efb0b9ddc1f81b8b5, sha256: 462e02fc5aa2e969837a5bd2230cfdaa9642faec183a1b25c054e415d4354411)
+0015.831 (0) Saving backup status to database (elements: 8)
+0015.838 (0) Beginning creation of database dump (WordPress DB)
+0015.840 (0) SQL compatibility mode is: NO_ZERO_IN_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION
+0015.847 (0) Testing potential mysqldump binary: /usr/bin/mysqldump
+0015.945 (0) Output: /*!40103 SET @OLD_TIME_ZONE=@@TIME_ZONE */;\n/*!40103 SET TIME_ZONE='+00:00' */;\n/*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;\n/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;\n/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;\n/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;\nDROP TABLE IF EXISTS `wp_options`;\n/*!40101 SET @saved_cs_client     = @@character_set_client */;\n/*!50503 SET character_set_client = utf8mb4 */;\n (truncated - 1596 bytes total)
+0015.947 (0) Working binary mysqldump found: /usr/bin/mysqldump
+0015.989 (0) Table wp_options: Total expected rows (via COUNT): 304
+0015.991 (0) Table is relatively small; fetch_rows will thus be: 500 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0016.107 (0) Table wp_options: Rows added in this batch (next record: 13783): 300 (uncompressed bytes in this segment=1723992) in 0.15 seconds
+0016.117 (0) Table wp_options: finishing file(s) (2, 372.9 KB)
+0016.142 (0) Table wp_users: Total expected rows (via COUNT): 2
+0016.144 (0) Table is relatively small; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0016.150 (0) Table wp_users: Rows added in this batch (next record: 2): 2 (uncompressed bytes in this segment=1663) in 0.03 seconds
+0016.157 (0) Table wp_users: finishing file(s) (2, 0.7 KB)
+0016.185 (0) Table wp_usermeta: Total expected rows (via COUNT): 50
+0016.187 (0) Table is relatively small; fetch_rows will thus be: 100 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0016.193 (0) Table wp_usermeta: Rows added in this batch (next record: 65): 50 (uncompressed bytes in this segment=10961) in 0.03 seconds
+0016.202 (0) Table wp_usermeta: finishing file(s) (2, 3.3 KB)
+0016.216 (0) Table wp_commentmeta: Total expected rows (via COUNT): 0
+0016.220 (0) Table wp_commentmeta: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=726) in 0.01 seconds
+0016.229 (0) Table wp_commentmeta: finishing file(s) (2, 0.4 KB)
+0016.252 (0) Table wp_comments: Total expected rows (via COUNT): 1
+0016.255 (0) Table is relatively small; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0016.260 (0) Table wp_comments: Rows added in this batch (next record: 1): 1 (uncompressed bytes in this segment=2257) in 0.03 seconds
+0016.266 (0) Table wp_comments: finishing file(s) (2, 0.8 KB)
+0016.280 (0) Table wp_links: Total expected rows (via COUNT): 0
+0016.285 (0) Table wp_links: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=1456) in 0.01 seconds
+0016.291 (0) Table wp_links: finishing file(s) (2, 0.5 KB)
+0016.297 (0) Table wp_postmeta: Total expected rows (approximate): 19457
+0027.549 (0) Table wp_postmeta: binary mysqldump finished (writes: 142, bytes 110887782, return code 0) in 11.25 seconds
+0027.604 (0) Table wp_postmeta: finishing file(s) (1, 19944.6 KB)
+0028.487 (0) Table wp_posts: Total expected rows (approximate): 4952
+0054.428 (0) Table wp_posts: Rows added in this batch (next record: 1217): 1000 (uncompressed bytes in this segment=19606719) in 26.81 seconds
+0055.516 (0) Table wp_posts: Total expected rows (via COUNT): 5434
+0135.899 (0) Table wp_posts: Rows added in this batch (next record: 5572): 4000 (uncompressed bytes in this segment=78354221) in 80.46 seconds
+0136.117 (0) Table wp_posts: Total expected rows (via COUNT): 5434
+0138.703 (0) Table wp_posts: Rows added in this batch (next record: 6060): 434 (uncompressed bytes in this segment=8057280) in 2.73 seconds
+0138.734 (0) Table wp_posts: finishing file(s) (4, 28778.1 KB)
+0138.761 (0) Table wp_term_relationships: Total expected rows (approximate): 79
+0138.766 (0) Table wp_term_relationships: Rows added in this batch (next record: 100000): 84 (uncompressed bytes in this segment=1984) in 0.01 seconds
+0138.774 (0) Table wp_term_relationships: finishing file(s) (2, 0.6 KB)
+0138.801 (0) Table wp_term_taxonomy: Total expected rows (via COUNT): 41
+0138.803 (0) Table is relatively small; fetch_rows will thus be: 50 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0138.808 (0) Table wp_term_taxonomy: Rows added in this batch (next record: 41): 41 (uncompressed bytes in this segment=2263) in 0.03 seconds
+0138.817 (0) Table wp_term_taxonomy: finishing file(s) (2, 0.7 KB)
+0138.833 (0) Table wp_termmeta: Total expected rows (via COUNT): 0
+0138.837 (0) Table wp_termmeta: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=682) in 0.01 seconds
+0138.845 (0) Table wp_termmeta: finishing file(s) (2, 0.4 KB)
+0138.869 (0) Table wp_terms: Total expected rows (via COUNT): 41
+0138.872 (0) Table is relatively small; fetch_rows will thus be: 50 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0138.876 (0) Table wp_terms: Rows added in this batch (next record: 41): 41 (uncompressed bytes in this segment=2456) in 0.03 seconds
+0138.882 (0) Table wp_terms: finishing file(s) (2, 0.9 KB)
+0138.911 (0) Table wp_bv_activities_store: Total expected rows (via COUNT): 2
+0138.914 (0) Table is relatively small; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0138.918 (0) Table wp_bv_activities_store: Rows added in this batch (next record: 52): 2 (uncompressed bytes in this segment=1362) in 0.03 seconds
+0138.925 (0) Table wp_bv_activities_store: finishing file(s) (2, 0.7 KB)
+0138.950 (0) Table wp_bv_fw_requests: Total expected rows (via COUNT): 581
+0138.968 (0) Table wp_bv_fw_requests: Rows added in this batch (next record: 230554): 581 (uncompressed bytes in this segment=189899) in 0.04 seconds
+0138.976 (0) Table wp_bv_fw_requests: finishing file(s) (2, 30.2 KB)
+0138.985 (0) Table wp_bv_ip_store: Total expected rows (approximate): 2703
+0139.035 (0) Table wp_bv_ip_store: Rows added in this batch (next record: 5383): 5383 (uncompressed bytes in this segment=232249) in 0.05 seconds
+0139.046 (0) Table wp_bv_ip_store: finishing file(s) (2, 44.1 KB)
+0139.074 (0) Table wp_bv_lp_requests: Total expected rows (via COUNT): 4
+0139.076 (0) Table is relatively small; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0139.081 (0) Table wp_bv_lp_requests: Rows added in this batch (next record: 2391): 4 (uncompressed bytes in this segment=1352) in 0.03 seconds
+0139.087 (0) Table wp_bv_lp_requests: finishing file(s) (2, 0.6 KB)
+0139.119 (0) Table wp_e_submissions: Total expected rows (via COUNT): 407
+0139.123 (0) Table is relatively small; fetch_rows will thus be: 500 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0139.140 (0) Table wp_e_submissions: Rows added in this batch (next record: 408): 407 (uncompressed bytes in this segment=172118) in 0.05 seconds
+0139.152 (0) Table wp_e_submissions: finishing file(s) (2, 24.8 KB)
+0139.179 (0) Table wp_e_submissions_actions_log: Total expected rows (via COUNT): 407
+0139.182 (0) Table is relatively small; fetch_rows will thus be: 500 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0139.190 (0) Table wp_e_submissions_actions_log: Rows added in this batch (next record: 407): 407 (uncompressed bytes in this segment=58078) in 0.03 seconds
+0139.197 (0) Table wp_e_submissions_actions_log: finishing file(s) (2, 6.7 KB)
+0139.214 (0) Table wp_e_submissions_values: Total expected rows (approximate): 1135
+0139.250 (0) Table wp_e_submissions_values: Rows added in this batch (next record: 1632): 1632 (uncompressed bytes in this segment=347183) in 0.05 seconds
+0139.259 (0) Table wp_e_submissions_values: finishing file(s) (2, 115.1 KB)
+0139.271 (0) Table wp_wusers_inputs: Total expected rows (approximate): 48
+0139.275 (0) Table wp_wusers_inputs: Rows added in this batch (next record: 1000): 48 (uncompressed bytes in this segment=7040) in 0.01 seconds
+0139.281 (0) Table wp_wusers_inputs: finishing file(s) (2, 1.2 KB)
+0139.290 (0) Table wp_wzen_time_table: Total expected rows (approximate): 103
+0139.294 (0) Table wp_wzen_time_table: Rows added in this batch (next record: 1000): 103 (uncompressed bytes in this segment=1958) in 0.01 seconds
+0139.301 (0) Table wp_wzen_time_table: finishing file(s) (2, 0.5 KB)
+0139.343 (0) Table wp_yoast_indexable: Total expected rows (approximate): 3125
+0139.643 (0) Table wp_yoast_indexable: Rows added in this batch (next record: 3217): 3214 (uncompressed bytes in this segment=1689831) in 0.33 seconds
+0139.697 (0) Table wp_yoast_indexable: finishing file(s) (2, 237.8 KB)
+0139.725 (0) Table wp_yoast_indexable_hierarchy: Total expected rows (approximate): 776
+0139.732 (0) Table wp_yoast_indexable_hierarchy: Rows added in this batch (next record: 1000): 835 (uncompressed bytes in this segment=15264) in 0.02 seconds
+0139.738 (0) Table wp_yoast_indexable_hierarchy: finishing file(s) (2, 2.6 KB)
+0139.768 (0) Table wp_yoast_migrations: Total expected rows (via COUNT): 23
+0139.771 (0) Table is relatively small; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0139.776 (0) Table wp_yoast_migrations: Rows added in this batch (next record: 23): 23 (uncompressed bytes in this segment=1236) in 0.03 seconds
+0139.783 (0) Table wp_yoast_migrations: finishing file(s) (2, 0.6 KB)
+0139.793 (0) Table wp_yoast_primary_term: Total expected rows (via COUNT): 0
+0139.801 (0) Table wp_yoast_primary_term: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=842) in 0.01 seconds
+0139.807 (0) Table wp_yoast_primary_term: finishing file(s) (2, 0.4 KB)
+0139.814 (0) Table wp_yoast_seo_links: Total expected rows (approximate): 11739
+0139.991 (0) Table wp_yoast_seo_links: binary mysqldump finished (writes: 41, bytes 1201600, return code 0) in 0.18 seconds
+0140.000 (0) Table wp_yoast_seo_links: finishing file(s) (1, 90.2 KB)
+0140.005 (0) backup_2022-01-18-1214_TRJ_Company_Limited_Portfolio__cf8e27a36455-db-table-wp_options.table.tmpr13784.gz (1/26/fopen): adding to final database dump
+0140.014 (0) backup_2022-01-18-1214_TRJ_Company_Limited_Portfolio__cf8e27a36455-db-table-wp_options.table.gz (2/26/fopen): adding to final database dump
+0140.017 (0) backup_2022-01-18-1214_TRJ_Company_Limited_Portfolio__cf8e27a36455-db-table-wp_users.table.tmpr3.gz (3/26/fopen): adding to final database dump
+0140.019 (0) backup_2022-01-18-1214_TRJ_Company_Limited_Portfolio__cf8e27a36455-db-table-wp_users.table.gz (4/26/fopen): adding to final database dump
+0140.021 (0) backup_2022-01-18-1214_TRJ_Company_Limited_Portfolio__cf8e27a36455-db-table-wp_usermeta.table.tmpr66.gz (5/26/fopen): adding to final database dump
+0140.023 (0) backup_2022-01-18-1214_TRJ_Company_Limited_Portfolio__cf8e27a36455-db-table-wp_usermeta.table.gz (6/26/fopen): adding to final database dump
+0140.024 (0) backup_2022-01-18-1214_TRJ_Company_Limited_Portfolio__cf8e27a36455-db-table-wp_commentmeta.table.tmpr0.gz (7/26/fopen): adding to final database dump
+0140.026 (0) backup_2022-01-18-1214_TRJ_Company_Limited_Portfolio__cf8e27a36455-db-table-wp_commentmeta.table.gz (8/26/fopen): adding to final database dump
+0140.028 (0) backup_2022-01-18-1214_TRJ_Company_Limited_Portfolio__cf8e27a36455-db-table-wp_comments.table.tmpr2.gz (9/26/fopen): adding to final database dump
+0140.030 (0) backup_2022-01-18-1214_TRJ_Company_Limited_Portfolio__cf8e27a36455-db-table-wp_comments.table.gz (10/26/fopen): adding to final database dump
+0140.032 (0) backup_2022-01-18-1214_TRJ_Company_Limited_Portfolio__cf8e27a36455-db-table-wp_links.table.tmpr0.gz (11/26/fopen): adding to final database dump
+0140.034 (0) backup_2022-01-18-1214_TRJ_Company_Limited_Portfolio__cf8e27a36455-db-table-wp_links.table.gz (12/26/fopen): adding to final database dump
+0140.035 (0) backup_2022-01-18-1214_TRJ_Company_Limited_Portfolio__cf8e27a36455-db-table-wp_postmeta.table.gz (13/26/fopen): adding to final database dump
+0140.376 (0) backup_2022-01-18-1214_TRJ_Company_Limited_Portfolio__cf8e27a36455-db-table-wp_posts.table.tmpr1217.gz (14/26/fopen): adding to final database dump
+0140.483 (0) backup_2022-01-18-1214_TRJ_Company_Limited_Portfolio__cf8e27a36455-db-table-wp_posts.table.tmpr5572.gz (15/26/fopen): adding to final database dump
+0140.863 (0) backup_2022-01-18-1214_TRJ_Company_Limited_Portfolio__cf8e27a36455-db-table-wp_posts.table.tmpr6061.gz (16/26/fopen): adding to final database dump
+0140.910 (0) backup_2022-01-18-1214_TRJ_Company_Limited_Portfolio__cf8e27a36455-db-table-wp_posts.table.gz (17/26/fopen): adding to final database dump
+0140.916 (0) backup_2022-01-18-1214_TRJ_Company_Limited_Portfolio__cf8e27a36455-db-table-wp_term_relationships.table.tmpr100001.gz (18/26/fopen): adding to final database dump
+0140.919 (0) backup_2022-01-18-1214_TRJ_Company_Limited_Portfolio__cf8e27a36455-db-table-wp_term_relationships.table.gz (19/26/fopen): adding to final database dump
+0140.921 (0) backup_2022-01-18-1214_TRJ_Company_Limited_Portfolio__cf8e27a36455-db-table-wp_term_taxonomy.table.tmpr42.gz (20/26/fopen): adding to final database dump
+0140.923 (0) backup_2022-01-18-1214_TRJ_Company_Limited_Portfolio__cf8e27a36455-db-table-wp_term_taxonomy.table.gz (21/26/fopen): adding to final database dump
+0140.925 (0) backup_2022-01-18-1214_TRJ_Company_Limited_Portfolio__cf8e27a36455-db-table-wp_termmeta.table.tmpr0.gz (22/26/fopen): adding to final database dump
+0140.927 (0) backup_2022-01-18-1214_TRJ_Company_Limited_Portfolio__cf8e27a36455-db-table-wp_termmeta.table.gz (23/26/fopen): adding to final database dump
+0140.929 (0) backup_2022-01-18-1214_TRJ_Company_Limited_Portfolio__cf8e27a36455-db-table-wp_terms.table.tmpr42.gz (24/26/fopen): adding to final database dump
+0140.931 (0) backup_2022-01-18-1214_TRJ_Company_Limited_Portfolio__cf8e27a36455-db-table-wp_terms.table.gz (25/26/fopen): adding to final database dump
+0140.933 (0) backup_2022-01-18-1214_TRJ_Company_Limited_Portfolio__cf8e27a36455-db-table-wp_bv_activities_store.table.tmpr53.gz (26/26/fopen): adding to final database dump
+0140.935 (0) backup_2022-01-18-1214_TRJ_Company_Limited_Portfolio__cf8e27a36455-db-table-wp_bv_activities_store.table.gz (27/26/fopen): adding to final database dump
+0140.937 (0) backup_2022-01-18-1214_TRJ_Company_Limited_Portfolio__cf8e27a36455-db-table-wp_bv_fw_requests.table.tmpr230555.gz (28/26/fopen): adding to final database dump
+0140.940 (0) backup_2022-01-18-1214_TRJ_Company_Limited_Portfolio__cf8e27a36455-db-table-wp_bv_fw_requests.table.gz (29/26/fopen): adding to final database dump
+0140.942 (0) backup_2022-01-18-1214_TRJ_Company_Limited_Portfolio__cf8e27a36455-db-table-wp_bv_ip_store.table.tmpr5384.gz (30/26/fopen): adding to final database dump
+0140.945 (0) backup_2022-01-18-1214_TRJ_Company_Limited_Portfolio__cf8e27a36455-db-table-wp_bv_ip_store.table.gz (31/26/fopen): adding to final database dump
+0140.946 (0) backup_2022-01-18-1214_TRJ_Company_Limited_Portfolio__cf8e27a36455-db-table-wp_bv_lp_requests.table.tmpr2392.gz (32/26/fopen): adding to final database dump
+0140.948 (0) backup_2022-01-18-1214_TRJ_Company_Limited_Portfolio__cf8e27a36455-db-table-wp_bv_lp_requests.table.gz (33/26/fopen): adding to final database dump
+0140.950 (0) backup_2022-01-18-1214_TRJ_Company_Limited_Portfolio__cf8e27a36455-db-table-wp_e_submissions.table.tmpr409.gz (34/26/fopen): adding to final database dump
+0140.953 (0) backup_2022-01-18-1214_TRJ_Company_Limited_Portfolio__cf8e27a36455-db-table-wp_e_submissions.table.gz (35/26/fopen): adding to final database dump
+0140.954 (0) backup_2022-01-18-1214_TRJ_Company_Limited_Portfolio__cf8e27a36455-db-table-wp_e_submissions_actions_log.table.tmpr408.gz (36/26/fopen): adding to final database dump
+0140.956 (0) backup_2022-01-18-1214_TRJ_Company_Limited_Portfolio__cf8e27a36455-db-table-wp_e_submissions_actions_log.table.gz (37/26/fopen): adding to final database dump
+0140.958 (0) backup_2022-01-18-1214_TRJ_Company_Limited_Portfolio__cf8e27a36455-db-table-wp_e_submissions_values.table.tmpr1633.gz (38/26/fopen): adding to final database dump
+0140.962 (0) backup_2022-01-18-1214_TRJ_Company_Limited_Portfolio__cf8e27a36455-db-table-wp_e_submissions_values.table.gz (39/26/fopen): adding to final database dump
+0140.963 (0) backup_2022-01-18-1214_TRJ_Company_Limited_Portfolio__cf8e27a36455-db-table-wp_wusers_inputs.table.tmpr1001.gz (40/26/fopen): adding to final database dump
+0140.966 (0) backup_2022-01-18-1214_TRJ_Company_Limited_Portfolio__cf8e27a36455-db-table-wp_wusers_inputs.table.gz (41/26/fopen): adding to final database dump
+0140.967 (0) backup_2022-01-18-1214_TRJ_Company_Limited_Portfolio__cf8e27a36455-db-table-wp_wzen_time_table.table.tmpr1001.gz (42/26/fopen): adding to final database dump
+0140.969 (0) backup_2022-01-18-1214_TRJ_Company_Limited_Portfolio__cf8e27a36455-db-table-wp_wzen_time_table.table.gz (43/26/fopen): adding to final database dump
+0140.971 (0) backup_2022-01-18-1214_TRJ_Company_Limited_Portfolio__cf8e27a36455-db-table-wp_yoast_indexable.table.tmpr3218.gz (44/26/fopen): adding to final database dump
+0140.977 (0) backup_2022-01-18-1214_TRJ_Company_Limited_Portfolio__cf8e27a36455-db-table-wp_yoast_indexable.table.gz (45/26/fopen): adding to final database dump
+0140.979 (0) backup_2022-01-18-1214_TRJ_Company_Limited_Portfolio__cf8e27a36455-db-table-wp_yoast_indexable_hierarchy.table.tmpr1001.gz (46/26/fopen): adding to final database dump
+0140.981 (0) backup_2022-01-18-1214_TRJ_Company_Limited_Portfolio__cf8e27a36455-db-table-wp_yoast_indexable_hierarchy.table.gz (47/26/fopen): adding to final database dump
+0140.983 (0) backup_2022-01-18-1214_TRJ_Company_Limited_Portfolio__cf8e27a36455-db-table-wp_yoast_migrations.table.tmpr24.gz (48/26/fopen): adding to final database dump
+0140.985 (0) backup_2022-01-18-1214_TRJ_Company_Limited_Portfolio__cf8e27a36455-db-table-wp_yoast_migrations.table.gz (49/26/fopen): adding to final database dump
+0140.986 (0) backup_2022-01-18-1214_TRJ_Company_Limited_Portfolio__cf8e27a36455-db-table-wp_yoast_primary_term.table.tmpr0.gz (50/26/fopen): adding to final database dump
+0140.988 (0) backup_2022-01-18-1214_TRJ_Company_Limited_Portfolio__cf8e27a36455-db-table-wp_yoast_primary_term.table.gz (51/26/fopen): adding to final database dump
+0140.991 (0) backup_2022-01-18-1214_TRJ_Company_Limited_Portfolio__cf8e27a36455-db-table-wp_yoast_seo_links.table.gz (52/26/fopen): adding to final database dump
+0141.081 (0) backup_2022-01-18-1214_TRJ_Company_Limited_Portfolio__cf8e27a36455-db.gz: finished writing out complete database file (49659.4 KB)
+0142.420 (0) Total database tables backed up: 26 (backup_2022-01-18-1214_TRJ_Company_Limited_Portfolio__cf8e27a36455-db.gz, size: 50851836, sha1: c9a1cf06e2284f381b07497a8cb4a7b85047e0c9, sha256: af9672f044bd58576dc907e14bcfe8033e5ecb4abbd0902b6d3fb321c98390da)
+0142.452 (0) backup_2022-01-18-1214_TRJ_Company_Limited_Portfolio__cf8e27a36455-plugins.zip: plugins: This file has not yet been successfully uploaded: will queue
+0142.455 (0) backup_2022-01-18-1214_TRJ_Company_Limited_Portfolio__cf8e27a36455-themes.zip: themes: This file has not yet been successfully uploaded: will queue
+0142.457 (0) backup_2022-01-18-1214_TRJ_Company_Limited_Portfolio__cf8e27a36455-uploads.zip: uploads: This file has not yet been successfully uploaded: will queue
+0142.459 (0) backup_2022-01-18-1214_TRJ_Company_Limited_Portfolio__cf8e27a36455-others.zip: others: This file has not yet been successfully uploaded: will queue
+0142.462 (0) backup_2022-01-18-1214_TRJ_Company_Limited_Portfolio__cf8e27a36455-db.gz: db: This file has not yet been successfully uploaded: will queue
+0142.464 (0) Saving backup history. Total backup size: 154.2 MB
+0142.470 (0) Requesting upload of the files that have not yet been successfully uploaded (5)
+0142.477 (0) Cloud backup selection (1/1): none with instance (1/1) (last)
+0142.479 (0) No remote despatch: user chose no remote backup service
+0142.481 (0) Recording as successfully uploaded: backup_2022-01-18-1214_TRJ_Company_Limited_Portfolio__cf8e27a36455-plugins.zip
+0142.486 (0) Deleting zip manifest (backup_2022-01-18-1214_TRJ_Company_Limited_Portfolio__cf8e27a36455-plugins.zip.list.tmp)
+0142.489 (0) Recording as successfully uploaded: backup_2022-01-18-1214_TRJ_Company_Limited_Portfolio__cf8e27a36455-themes.zip
+0142.498 (0) Deleting zip manifest (backup_2022-01-18-1214_TRJ_Company_Limited_Portfolio__cf8e27a36455-themes.zip.list.tmp)
+0142.500 (0) Recording as successfully uploaded: backup_2022-01-18-1214_TRJ_Company_Limited_Portfolio__cf8e27a36455-uploads.zip
+0142.505 (0) Deleting zip manifest (backup_2022-01-18-1214_TRJ_Company_Limited_Portfolio__cf8e27a36455-uploads.zip.list.tmp)
+0142.508 (0) Recording as successfully uploaded: backup_2022-01-18-1214_TRJ_Company_Limited_Portfolio__cf8e27a36455-others.zip
+0142.512 (0) Deleting zip manifest (backup_2022-01-18-1214_TRJ_Company_Limited_Portfolio__cf8e27a36455-others.zip.list.tmp)
+0142.514 (0) Recording as successfully uploaded: backup_2022-01-18-1214_TRJ_Company_Limited_Portfolio__cf8e27a36455-db.gz
+0142.522 (0) Retain: beginning examination of existing backup sets; user setting: retain_files=2, retain_db=2
+0142.525 (0) Number of backup sets in history: 1; groups (db): 1
+0142.527 (0) Examining (for databases) backup set with group_id=0, nonce=cf8e27a36455, datestamp=1642508087 (Jan 18 2022 12:14:47)
+0142.529 (0) This backup set is the backup set just made, so will not be deleted.
+0142.529 (0) Number of backup sets in history: 1; groups (files): 1
+0142.530 (0) Examining (for files) backup set with nonce=cf8e27a36455, datestamp=1642508087 (Jan 18 2022 12:14:47)
+0142.530 (0) This backup set is the backup set just made, so will not be deleted.
+0142.532 (0) This backup set is the backup set just made, so will not be deleted.
+0142.532 (0) This backup set is the backup set just made, so will not be deleted.
+0142.533 (0) This backup set is the backup set just made, so will not be deleted.
+0142.533 (0) This backup set remains non-empty (f=1/d=1); will retain in history
+0142.534 (0) Retain: saving new backup history (sets now: 1) and finishing retain operation
+0142.545 (0) Resume backup (cf8e27a36455, 0): finish run
+0142.561 (0) Decremented the semaphore (fd) by 1
+0142.565 (0) Semaphore (fd) unlocked
+0142.568 (0) There were no errors in the uploads, so the 'resume' event (1) is being unscheduled
+0142.575 (0) No email will/can be sent - the user has not configured an email address.
+0142.577 (0) The backup apparently succeeded and is now complete

